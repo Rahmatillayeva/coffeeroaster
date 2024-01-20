@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-p-font-family: Barlow;
+  --text-p-font-weight: 400;
+  --text-heady-font-family: Fraunces;
+  --text-heady-font-weight: 900;
+  --text-color: #FEFCF7;
+}
+
+.btn {
+  border-radius: 6px;
+  background: #66D2CF;
+  font-family: var(--text-heady-font-family);
+  font-weight: var(--text-heady-font-weight);
+  padding: 15px 30px;
+  color: var(--text-color);
+
+  &:hover {
+    border: 3px solid #66D2CF;
+    color: #66D2CF;
+    background-color: #FEFCF7;
+  }
+}
