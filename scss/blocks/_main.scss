@@ -200,12 +200,12 @@
   .main-first-list {
     flex-direction: column;
     box-shadow: 0px -30px 50px 20px white;
-
     &-item {
       display: flex;
       width: 100%;
       text-align: left;
       justify-content: center;
+      margin: 0 auto;
 
       p {
         width: 282px;
@@ -282,14 +282,6 @@
     text-align: center;
   }
 
-  .footer-list {
-    flex-direction: column;
-    text-align: center;
-    &-item {
-      padding-bottom: 10px;
-    }
-
-    }
 
 
 }

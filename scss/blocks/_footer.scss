@@ -58,3 +58,15 @@ padding: 0 30px;
 }
 
 }
+
+
+@media only screen and (max-width: 590px) {
+  .footer-list {
+    flex-direction: column;
+    text-align: center;
+    &-item {
+      padding: 10px 0;
+    }
+
+    }
+  }

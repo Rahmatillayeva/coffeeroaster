@@ -302,6 +302,7 @@
     width: 100%;
     text-align: left;
     justify-content: center;
+    margin: 0 auto;
   }
   .main-first-list-item p {
     width: 282px;
@@ -347,13 +348,6 @@
     margin: 0 auto;
     text-align: center;
   }
-  .footer-list {
-    flex-direction: column;
-    text-align: center;
-  }
-  .footer-list-item {
-    padding-bottom: 10px;
-  }
 }
 .footer {
   display: flex;
@@ -396,5 +390,14 @@
   }
   .footer-list-item {
     padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .footer-list {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-list-item {
+    padding: 10px 0;
   }
 }/*# sourceMappingURL=main.css.map */
