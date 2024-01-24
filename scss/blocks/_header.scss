@@ -22,6 +22,10 @@
   }
 }
 
+.hamburger_menu {
+  display: none;
+}
+
 .hero {
   background: url(/img/Bitmap.png);
   background-repeat: no-repeat;
@@ -35,7 +39,7 @@
     font-weight: var(--text-heady-font-weight);
     font-size: 72px;
     color: var(--text-color);
-    width: 493px;
+    max-width: 493px;
   }
 
   p {
@@ -43,7 +47,7 @@
     font-weight: var(--text-p-font-weight);
     color: var(--text-color);
     font-size: 16px;
-    width: 445px;
+    max-width: 445px;
     padding-top: 32px;
     padding-bottom: 45px;
   }
@@ -54,7 +58,37 @@
 
 // tablet responsive
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 768px) {
+  .site-nav-list {
+    display: none;
+  }
+
+  .hamburger_menu {
+    display: block;
+  }
+
+  .nav-open {
+    display: block;
+  }
+
+}
+
+
+@media only screen and (max-width: 590px) {
+  .hero {
+    margin: 0 auto;
+    text-align: center;
+
+    h1 {
+      font-size: 65px;
+    }
+
+    p {
+      font-size: 10px;
+    }
+  }
+
+
 
 
 }

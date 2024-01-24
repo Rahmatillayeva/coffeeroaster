@@ -70,6 +70,10 @@
   color: #333D4B;
 }
 
+.hamburger_menu {
+  display: none;
+}
+
 .hero {
   background: url(/img/Bitmap.png);
   background-repeat: no-repeat;
@@ -83,18 +87,41 @@
   font-weight: var(--text-heady-font-weight);
   font-size: 72px;
   color: var(--text-color);
-  width: 493px;
+  max-width: 493px;
 }
 .hero p {
   font-family: var(--text-p-font-family);
   font-weight: var(--text-p-font-weight);
   color: var(--text-color);
   font-size: 16px;
-  width: 445px;
+  max-width: 445px;
   padding-top: 32px;
   padding-bottom: 45px;
 }
 
+@media only screen and (max-width: 768px) {
+  .site-nav-list {
+    display: none;
+  }
+  .hamburger_menu {
+    display: block;
+  }
+  .nav-open {
+    display: block;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .hero {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 65px;
+  }
+  .hero p {
+    font-size: 10px;
+  }
+}
 .main-first {
   padding: 100px 80px;
 }
@@ -118,7 +145,7 @@
   bottom: 20px;
 }
 .main-first-list-item {
-  width: 255px;
+  max-width: 255px;
   text-align: center;
 }
 .main-first-list-item h3 {
@@ -154,7 +181,8 @@
   font-family: var(--text-p-font-family);
   font-weight: var(--text-p-font-weight);
   font-size: 16px;
-  width: 540px;
+  max-width: 500px;
+  padding: 0 20px;
   text-align: center;
   margin: 0 auto;
 }
@@ -188,7 +216,7 @@
   font-weight: var(--text-p-font-weight);
   font-size: 16px;
   color: var(--text-color);
-  width: 255px;
+  max-width: 255px;
 }
 
 .main-third h2 {
@@ -255,11 +283,10 @@
   }
   .main-second-list-item {
     display: flex;
-    padding: 0 80px;
+    padding: 10px 80px;
     justify-content: space-around;
     align-items: center;
     margin: 10px 0;
-    padding: 10px 0;
   }
   .background-fon {
     font-size: 135px;
@@ -289,6 +316,43 @@
 @media only screen and (max-width: 898px) {
   .background-fon {
     font-size: 100px;
+  }
+}
+@media only screen and (max-width: 786px) {
+  .main-third-list {
+    flex-direction: column;
+  }
+  .main-third-list-item {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .background-fon {
+    font-size: 75px;
+  }
+  .main-first-list {
+    box-shadow: 0px -30px 100px 20px white;
+  }
+  .main-first-list-item {
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 255px;
+  }
+  .main-second-list-item {
+    flex-direction: column;
+  }
+  .btn_ {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .footer-list {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-list-item {
+    padding-bottom: 10px;
   }
 }
 .footer {
